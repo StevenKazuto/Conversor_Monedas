@@ -1,0 +1,624 @@
+Index: src/com/alura/Challenge/Modelos/PrintsDelMenu.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/com/alura/Challenge/Modelos/PrintsDelMenu.java b/src/com/alura/Challenge/Modelos/PrintsDelMenu.java
+new file mode 100644
+--- /dev/null	(date 1715483593965)
++++ b/src/com/alura/Challenge/Modelos/PrintsDelMenu.java	(date 1715483593965)
+@@ -0,0 +1,221 @@
++package com.alura.Challenge.Modelos;
++
++
++import java.util.ArrayList;
++
++public class PrintsDelMenu {
++
++    public void menuPaisesPrint() {
++        System.out.println("""
++                           COD Nombre de la monesa                     Nombre del pais
++                           ----------------------------------------------------------------------
++                           AED	Dírham de los Emiratos Árabes Unidos	Emiratos Árabes Unidos
++                           AFN	afgano afgano							Afganistán
++                           ALL	Lek albanés							    Albania
++                           AMD	Dram armenio							Armenia
++                           ANG	Florín antillano holandés				Antillas Holandesas
++                           AOA	Kwanza angoleño							Angola
++                           ARS	peso argentino							Argentina
++                           AUD	Dólar australiano						Australia
++                           AWG	Florín de Aruba							Aruba
++                           AZN	Manat azerbaiyano						Azerbaiyán
++                           BAM	Marca de Bosnia y Herzegovina			Bosnia y Herzegovina
++                           BBD	Dólar de Barbados						Barbados
++                           BDT	taka bangladesí							Bangladesh
++                           BGN	Lev búlgaro							    Bulgaria
++                           BHD	dinar bahreiní							Bahréin
++                           BIF	Franco burundés							Burundi
++                           BMD	Dólar de Bermudas						islas Bermudas
++                           BND	Dólar de Brunéi							Brunéi
++                           BOB	boliviano boliviano						Bolivia
++                           BRL	Real brasileño							Brasil
++                           BSD	dólar bahameño							bahamas
++                           BTN	Ngultrum butanés						Bután
++                           BWP	Pula de Botsuana						Botsuana
++                           BYN	Rublo bielorruso						Bielorrusia
++                           BZD	Dólar de Belice							Belice
++                           CAD	Dolar canadiense						Canadá
++                           CDF	franco congoleño						República Democrática del Congo
++                           CHF	Franco suizo							Suiza
++                           CLP	peso chileno							Chile
++                           CNY	Renminbi chino							Porcelana
++                           COP	peso colombiano							Colombia
++                           CRC	Colón costarricense						Costa Rica
++                           CUP	peso cubano							    Cuba
++                           CVE	Escudo caboverdiano						Cabo Verde
++                           CZK	corona checa							República Checa
++                           DJF	Franco de Yibuti						Yibuti
++                           DKK	corona danesa							Dinamarca
++                           DOP	peso dominicano							República Dominicana
++                           DZD	dinar argelino							Argelia
++                           EGP	Libra egipcia							Egipto
++                           ERN	Nakfa eritrea							Eritrea
++                           ETB	Birr etíope							    Etiopía
++                           EUR	Euro							        unión Europea
++                           FJD	Dólar fiyiano							Fiyi
++                           FKP	Libra de las Islas Malvinas				Islas Malvinas
++                           FOK	Corona feroesa							Islas Faroe
++                           GBP	Libra esterlina							Reino Unido
++                           GEL	Lari georgiano							Georgia
++                           GGP	Libra de Guernsey						Guernesey
++                           GHS	cedi ghanés							    Ghana
++                           GIP	Libra gibraltareña						Gibraltar
++                           GMD	Dalasi gambiano							Gambia
++                           GNF	franco guineano							Guinea
++                           GTQ	Quetzal guatemalteco					Guatemala
++                           GYD	dólar guyanés							Guayana
++                           HKD	Dolar de Hong Kong						Hong Kong
++                           HNL	Lempira hondureña						Honduras
++                           HRK	kuna croata							    Croacia
++                           HTG	gourde haitiano							Haití
++                           HUF	florín húngaro							Hungría
++                           IDR	rupia indonesia							Indonesia
++                           ILS	Nuevo séquel israelí					Israel
++                           IMP	Libra de Man							Isla del hombre
++                           INR	Rupia india							    India
++                           IQD	dinar iraquí							Irak
++                           IRR	rial iraní							    Irán
++                           ISK	corona islandesa						Islandia
++                           JEP	Libra de Jersey							Jersey
++                           JMD	dólar jamaicano							Jamaica
++                           JOD	dinar jordano							Jordán
++                           JPY	Yen japonés							    Japón
++                           KES	Chelín keniano							Kenia
++                           KGS	som kirguís							    Kirguistán
++                           KHR	Riel camboyano							Camboya
++                           KID	Dólar de Kiribati						Kiribati
++                           KMF	Franco comorano							Comoras
++                           KRW	Won surcoreano							Corea del Sur
++                           KWD	dinar kuwaití							Kuwait
++                           KYD	Dólar de las Islas Caimán				Islas Caimán
++                           KZT	Tenge kazajo							Kazajstán
++                           LAK	kip laosiano							Laos
++                           LBP	libra libanesa							Líbano
++                           LKR	Rupia de Sri Lanka						Sri Lanka
++                           LRD	dólar liberiano							Liberia
++                           LSL	Loti de Lesoto							Lesoto
++                           LYD	dinar libio							    Libia
++                           MAD	dírham marroquí							Marruecos
++                           MDL	Leu moldavo							    Moldavia
++                           MGA	Ariary malgache							Madagascar
++                           MKD	Denar macedonio							Macedonia del Norte
++                           MMK	Kyat birmano							Birmania
++                           MNT	Tögrög mongol							Mongolia
++                           MOP	Pataca de Macao							Macao
++                           MRU	Ouguiya mauritana						Mauritania
++                           MUR	Rupia de Mauricio						Mauricio
++                           MVR	Rufiyaa de Maldivas						Maldivas
++                           MWK	Kwacha de Malawi						Malaui
++                           MXN	peso mexicano							México
++                           MYR	Ringgit malayo							Malasia
++                           MZN	Metical mozambiqueño					Mozambique
++                           NAD	dólar namibio							Namibia
++                           NGN	naira nigeriana							Nigeria
++                           NIO	Córdoba nicaragüense					Nicaragua
++                           NOK	corona noruega							Noruega
++                           NPR	rupia nepalí							Nepal
++                           NZD	Dolar de Nueva Zelanda					Nueva Zelanda
++                           OMR	Rial omaní							    Omán
++                           PAB	Balboa panameño							Panamá
++                           PEN	soles peruanos							Perú
++                           PGK	Kina de Papúa Nueva Guinea				Papúa Nueva Guinea
++                           PHP	peso filipino							Filipinas
++                           PKR	Rupia paquistaní						Pakistán
++                           PLN	Złoty polaco							Polonia
++                           PYG	guaraní paraguayo						Paraguay
++                           QAR	Riyal catarí							Katar
++                           RON	Leu rumano							    Rumania
++                           RSD	dinar serbio							Serbia
++                           RUB	Rublo ruso							    Rusia
++                           RWF	franco ruandés							Ruanda
++                           SAR	Riyal saudita							Arabia Saudita
++                           SBD	Dólar de las Islas Salomón				Islas Salomón
++                           SCR	Rupia de Seychelles						Seychelles
++                           SDG	Libra sudanesa							Sudán
++                           SEK	Corona sueca							Suecia
++                           SGD	Dolar de Singapur						Singapur
++                           SHP	Libra de Santa Helena					santa elena
++                           SLE	Leona de Sierra Leona					Sierra Leona
++                           SOS	Chelín somalí							Somalia
++                           SRD	dólar surinamés							Surinam
++                           SSP	Libra sursudanesa						Sudán del Sur
++                           STN	Santo Tomé y Príncipe Dobra				Santo Tomé y Príncipe
++                           SYP	libra siria							    Siria
++                           SZL	Suazilandia Lilangeni					Esuatini
++                           THB	Baht tailandés							Tailandia
++                           TJS	Somoni tayiko							Tayikistán
++                           TMT	Manat de Turkmenistán					Turkmenistán
++                           TND	dinar tunecino							Túnez
++                           TOP	Pa'anga tongano							Tonga
++                           TRY	Lira turca							    Pavo
++                           TTD	Dólar de Trinidad y Tobago				Trinidad y Tobago
++                           TVD	dólar tuvaluano							Tuvalu
++                           TWD	Nuevo dólar taiwanés					Taiwán
++                           TZS	Chelín tanzano							Tanzania
++                           UAH	grivna ucraniana						Ucrania
++                           UGX	Chelín ugandés							Uganda
++                           USD	Dólar de los Estados Unidos				Estados Unidos
++                           UYU	peso uruguayo							Uruguay
++                           UZS	So'm uzbeko							    Uzbekistán
++                           VES	Bolívar Soberano venezolano				Venezuela
++                           VND	Đồng vietnamita							Vietnam
++                           VUV	VanuatuVatu							    Vanuatu
++                           WST	Tala samoana							Samoa
++                           XAF	Franco CFA de África Central			CEMAC
++                           XCD	Dólar del Caribe Oriental				Organización de Estados del Caribe Oriental
++                           XDR	Derechos especiales de dibujo			Fondo Monetario Internacional
++                           XOF	Franco CFA de África Occidental			CFA
++                           XPF	Franco CFP							    Colectividades de Ultramar
++                           YER	rial yemení							    Yemen
++                           ZAR	rand sudafricano						Sudáfrica
++                           ZMW	Kwacha zambiano							Zambia
++                           ZWL	dólar zimbabuense						Zimbabue
++                """);
++    }
++
++    public void printHistorial(ArrayList regiStro) {
++        if (regiStro.isEmpty()) {
++            System.out.println("""
++                    ----------------------------------
++                      HISTORIAL DE CONVERSIONES VACIO 
++                    ----------------------------------
++                    """);
++
++        } else {
++            System.out.println("""
++                    -----------------------------
++                      HISTORIAL DE CONVERSIONES
++                    -----------------------------
++                    """);
++            regiStro.forEach(System.out::println);
++
++            System.out.println("""
++                    --------------------------
++                    --------------------------
++                    --------------------------
++                    """);
++        }
++
++    }
++
++    public void menuDespedidaPrint() {
++        System.out.println("Bye Bye");
++        System.out.println("""
++                ░░░░░░░░░░░▄▄
++                ░░░░░░░░░░█░░█
++                ░░░░░░░░░░█░░█
++                ░░░░░░░░░█░░░█
++                ░░░░░░░░█░░░░█
++                ██████▄▄█░░░░░██████▄
++                ▓▓▓▓▓█░░░░░░░░░░░░░░█
++                ▓▓▓▓▓█░░░░░░░░░░░░░░█
++                ▓▓▓▓▓█░░░░░░░░░░░░░░█
++                ▓▓▓▓▓█░░░░░░░░░░░░░░█
++                ▓▓▓▓▓█░░░░░░░░░░░░░░█
++                ▓▓▓▓▓█████░░░░░░░░░█
++                █████▀░░░░▀▀██████▀
++                """);
++    }
++
++
++}
+Index: src/com/alura/Challenge/Modelos/MejorViualizacion.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/com/alura/Challenge/Modelos/MejorViualizacion.java b/src/com/alura/Challenge/Modelos/MejorViualizacion.java
+new file mode 100644
+--- /dev/null	(date 1715482200028)
++++ b/src/com/alura/Challenge/Modelos/MejorViualizacion.java	(date 1715482200028)
+@@ -0,0 +1,19 @@
++package com.alura.Challenge.Modelos;
++import java.text.DecimalFormat;
++
++public class MejorViualizacion {
++
++    public static String convertir(double val) {
++
++        DecimalFormat num = new DecimalFormat("#,###.000");
++        return num.format(val);
++    }
++
++    public static String convertir2(double val) {
++
++        DecimalFormat num = new DecimalFormat("#,###.000000");
++        return num.format(val);
++    }
++
++
++}
+Index: src/com/alura/Challenge/Modelos/Historial.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/com/alura/Challenge/Modelos/Historial.java b/src/com/alura/Challenge/Modelos/Historial.java
+new file mode 100644
+--- /dev/null	(date 1715481996187)
++++ b/src/com/alura/Challenge/Modelos/Historial.java	(date 1715481996187)
+@@ -0,0 +1,31 @@
++package com.alura.Challenge.Modelos;
++
++import java.time.LocalDate;
++import java.time.LocalTime;
++import java.util.ArrayList;
++import java.util.List;
++
++public class Historial {
++
++    public ArrayList<String> fechasHistorial = new ArrayList<>();
++
++    public ArrayList<String> getFechasHistorial() {
++        return fechasHistorial;
++    }
++
++    public void registro(String paisbase, String paisObjetivo, int cantidad, String resultadoConversion) {
++
++        String fecha = String.valueOf(LocalDate.now());
++        String hora = String.valueOf(LocalTime.now());
++        String aviso = String.format("%S %S : Se convirtio %d %S a %S %S", fecha, hora, cantidad, paisbase, resultadoConversion, paisObjetivo);
++        fechasHistorial.add(aviso);
++    }
++
++
++    public void registro(String paisbase, String monedaConvertidaEUR, String monedaConvertidaUSD) {
++        String fecha = String.valueOf(LocalDate.now());
++        String hora = String.valueOf(LocalTime.now());
++        String aviso = String.format("%S %S : Se convirtio 1 %S a %S EUR y %S USD", fecha, hora, paisbase, monedaConvertidaEUR, monedaConvertidaUSD);
++        fechasHistorial.add(aviso);
++    }
++}
+Index: .gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.gitignore b/.gitignore
+new file mode 100644
+--- /dev/null	(date 1715298244322)
++++ b/.gitignore	(date 1715298244322)
+@@ -0,0 +1,29 @@
++### IntelliJ IDEA ###
++out/
++!**/src/main/**/out/
++!**/src/test/**/out/
++
++### Eclipse ###
++.apt_generated
++.classpath
++.factorypath
++.project
++.settings
++.springBeans
++.sts4-cache
++bin/
++!**/src/main/**/bin/
++!**/src/test/**/bin/
++
++### NetBeans ###
++/nbproject/private/
++/nbbuild/
++/dist/
++/nbdist/
++/.nb-gradle/
++
++### VS Code ###
++.vscode/
++
++### Mac OS ###
++.DS_Store
+\ No newline at end of file
+Index: .idea/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/.gitignore b/.idea/.gitignore
+new file mode 100644
+--- /dev/null	(date 1715298246306)
++++ b/.idea/.gitignore	(date 1715298246306)
+@@ -0,0 +1,3 @@
++# Default ignored files
++/shelf/
++/workspace.xml
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+new file mode 100644
+--- /dev/null	(date 1715298246376)
++++ b/.idea/vcs.xml	(date 1715298246376)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$" vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: src/com/alura/Challenge/Principal/Principal.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/com/alura/Challenge/Principal/Principal.java b/src/com/alura/Challenge/Principal/Principal.java
+new file mode 100644
+--- /dev/null	(date 1715559922959)
++++ b/src/com/alura/Challenge/Principal/Principal.java	(date 1715559922959)
+@@ -0,0 +1,106 @@
++package com.alura.Challenge.Principal;
++
++import com.alura.Challenge.Modelos.*;
++
++import java.util.InputMismatchException;
++import java.util.Scanner;
++
++public class Principal {
++    public static void main(String[] args) {
++
++        Scanner teclado = new Scanner(System.in);
++        String paisBase = "";
++        String paisObjetivo = "";
++        int cantidadMonedas = 0;
++        boolean salidaPregunta = true;
++        ConsultaMonedas consultaMonedas = new ConsultaMonedas();
++
++        Historial historial = new Historial();
++
++        PrintsDelMenu menuPaises = new PrintsDelMenu();
++
++        try {
++            while (salidaPregunta) {
++                System.out.println("""
++                        Bienvenido al Conversor de Monedas de Steven Triviño
++                        Elija:
++                        1.Conversion entre 2 modeas a elegir
++                        2.Conversion de una moneda a elgir a EURO y DOLAR 
++                        3.Historial
++                        4.Salir
++                        """);
++                int opcionMenu = teclado.nextInt();
++
++                switch (opcionMenu) {
++                    case 1:
++                        menuPaises.menuPaisesPrint();
++                        System.out.println("""
++                                ---------------------------------------------
++                                      Digite las monedas con el COD 
++                                que se puede visualizar en la lista anterior
++                                    y la cantidad numerica a convertir
++                                ---------------------------------------------
++                                """);
++
++                        System.out.println("Digite la moneda que quiere convertir \n");
++                        paisBase = teclado.next();
++
++                        System.out.println("Digite la moneda a la quiere que se convierta \n");
++                        paisObjetivo = teclado.next();
++
++                        System.out.println("Digite la cantidad que quiere convertir");
++                        cantidadMonedas = teclado.nextInt();
++
++                        Moneda monedaAConvertir = consultaMonedas.buscaMoneda(paisBase, paisObjetivo, cantidadMonedas); //conSulta a la API
++                        String monedaConvertida = MejorViualizacion.convertir(monedaAConvertir.conversion_result());
++
++                        System.out.println(String.format("""
++                                --------------------------------------------------------------------------------
++                                                        El valor de su conversion es:
++                                                        %S %S       ==>  %S %S
++                                ---------------------------------------------------------------------------------
++                                """, cantidadMonedas, paisBase, monedaConvertida, paisObjetivo));
++
++                        historial.registro(paisBase, paisObjetivo, cantidadMonedas, monedaConvertida);
++
++                        break;
++                    case 2:
++                        menuPaises.menuPaisesPrint();
++
++                        System.out.println("Digite la moneda a la que quiere convertir a EUR y USD \n");
++                        paisBase = teclado.next();
++
++                        //convertir el json recibido en clase RECORD Moneda y acomoda su visualizacion en punteado
++                        Moneda monedaAConvertirEUR = consultaMonedas.buscaMoneda(paisBase, "EUR", 1);
++                        String monedaConvertidaEUR = MejorViualizacion.convertir2(monedaAConvertirEUR.conversion_result());
++
++                        Moneda monedaAConvertirUSD = consultaMonedas.buscaMoneda(paisBase, "USD", 1);
++                        String monedaConvertidaUSD = MejorViualizacion.convertir2(monedaAConvertirUSD.conversion_result());
++
++                        System.out.println("1 " + paisBase + " Equivale a : " + monedaConvertidaEUR +
++                                " EUR y a : " + monedaConvertidaUSD + " USD");
++
++                        historial.registro(paisBase, monedaConvertidaEUR, monedaConvertidaUSD);
++
++                        break;
++                    case 3:
++                        menuPaises.printHistorial(historial.getFechasHistorial());
++                        break;
++
++                    case 4:
++                        salidaPregunta = false;
++                        menuPaises.menuDespedidaPrint();
++                        break;
++                }
++            }
++        } catch (InputMismatchException e) {
++            System.out.println("""
++                                --------------------------------------------
++                                Digite correctamente lo que va a realizar
++                    -----------------------------------------------------------------
++                    """);
++        } catch (Exception e) {
++            System.out.println(e.getMessage());
++        }
++    }
++}
+Index: src/com/alura/Challenge/Modelos/Moneda.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/com/alura/Challenge/Modelos/Moneda.java b/src/com/alura/Challenge/Modelos/Moneda.java
+new file mode 100644
+--- /dev/null	(date 1715400528129)
++++ b/src/com/alura/Challenge/Modelos/Moneda.java	(date 1715400528129)
+@@ -0,0 +1,8 @@
++package com.alura.Challenge.Modelos;
++
++public record Moneda(String base_code,              // "COP"
++                     String target_code,            // "USD"
++                     Double conversion_rate,        // valor de base a target
++                     Double conversion_result //convercion multiplicando la cantidad
++                                                    ) {
++}
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+new file mode 100644
+--- /dev/null	(date 1715298245210)
++++ b/.idea/misc.xml	(date 1715298245210)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="17" project-jdk-type="JavaSDK">
++    <output url="file://$PROJECT_DIR$/out" />
++  </component>
++</project>
+\ No newline at end of file
+Index: src/com/alura/Challenge/Modelos/ConsultaMonedas.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/com/alura/Challenge/Modelos/ConsultaMonedas.java b/src/com/alura/Challenge/Modelos/ConsultaMonedas.java
+new file mode 100644
+--- /dev/null	(date 1715408888798)
++++ b/src/com/alura/Challenge/Modelos/ConsultaMonedas.java	(date 1715408888798)
+@@ -0,0 +1,41 @@
++package com.alura.Challenge.Modelos;
++
++import com.google.gson.Gson;
++import com.google.gson.JsonSyntaxException;
++
++import java.io.IOException;
++import java.net.URI;
++import java.net.http.HttpClient;
++import java.net.http.HttpRequest;
++import java.net.http.HttpResponse;
++import java.util.InputMismatchException;
++
++public class ConsultaMonedas {
++
++    public Moneda buscaMoneda(String monedaUsuarioBase, String monedaUsuarioObjetivo, int cantidadAConvertir) {
++
++        URI direccion = URI.create("https://v6.exchangerate-api.com/v6/b8648ca55f472f3fff45abaf/pair/"
++                + monedaUsuarioBase + "/" + monedaUsuarioObjetivo + "/" + cantidadAConvertir);
++        try {
++
++
++            HttpClient client = HttpClient.newHttpClient();
++            HttpRequest request = HttpRequest.newBuilder()
++                    .uri(direccion) //URL
++                    .build();
++
++            HttpResponse<String>
++                    response = client
++                    .send(request, HttpResponse.BodyHandlers.ofString());
++
++            return new Gson().fromJson(response.body(), Moneda.class);
++
++        } catch (JsonSyntaxException e) {
++            throw new RuntimeException("Digite correctamente la moneda que eligeInputMismatchException.");
++        } catch (IOException e) {
++            throw new RuntimeException("no encontre esa moneda.");
++        } catch (InterruptedException e) {
++            throw new RuntimeException("Digite correctamente la moneda que elige.");
++        }
++    }
++}
+\ No newline at end of file
+Index: .idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/modules.xml b/.idea/modules.xml
+new file mode 100644
+--- /dev/null	(date 1715298245153)
++++ b/.idea/modules.xml	(date 1715298245153)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="ProjectModuleManager">
++    <modules>
++      <module fileurl="file://$PROJECT_DIR$/Conversor_Monedas.iml" filepath="$PROJECT_DIR$/Conversor_Monedas.iml" />
++    </modules>
++  </component>
++</project>
+\ No newline at end of file
+Index: Conversor_Monedas.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Conversor_Monedas.iml b/Conversor_Monedas.iml
+new file mode 100644
+--- /dev/null	(date 1715298284499)
++++ b/Conversor_Monedas.iml	(date 1715298284499)
+@@ -0,0 +1,20 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<module type="JAVA_MODULE" version="4">
++  <component name="NewModuleRootManager" inherit-compiler-output="true">
++    <exclude-output />
++    <content url="file://$MODULE_DIR$">
++      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
++    </content>
++    <orderEntry type="inheritedJdk" />
++    <orderEntry type="sourceFolder" forTests="false" />
++    <orderEntry type="module-library" exported="">
++      <library>
++        <CLASSES>
++          <root url="jar://$USER_HOME$/Downloads/gson-2.10.1.jar!/" />
++        </CLASSES>
++        <JAVADOC />
++        <SOURCES />
++      </library>
++    </orderEntry>
++  </component>
++</module>
+\ No newline at end of file
